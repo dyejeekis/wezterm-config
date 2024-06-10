@@ -9,6 +9,9 @@ if is_win then
 	config.default_prog = { 'pwsh.exe' }
 end
 
+config.initial_cols = 120
+config.initial_rows = 40
+
 config.window_decorations = 'RESIZE'
 config.color_scheme = 'Batman'
 config.window_background_opacity = 0.85
