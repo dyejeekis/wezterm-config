@@ -1,12 +1,13 @@
--- Pull in the wezterm API
 local wezterm = require 'wezterm'
 
--- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- This is where you actually apply your config choices
+local is_win = wezterm.target_triple == 'x86_64-pc-windows-msvc'
 
-config.default_prog = { 'pwsh.exe' }
+-- default shell
+if is_win then
+	config.default_prog = { 'pwsh.exe' }
+end
 
 config.window_decorations = 'RESIZE'
 config.color_scheme = 'Batman'
@@ -20,5 +21,4 @@ config.colors = {
 -- config.font = wezterm.font 'Fira Code'
 config.font_size = 13.0
 
--- and finally, return the configuration to wezterm
 return config
