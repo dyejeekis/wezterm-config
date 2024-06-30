@@ -15,6 +15,13 @@ config.initial_rows = 40
 config.window_decorations = 'INTEGRATED_BUTTONS | RESIZE'
 config.color_scheme = 'Batman'
 config.window_background_opacity = 0.85
+config.window_padding = {
+	left = 5,
+	right = 5,
+	top = 5,
+	bottom = 5,
+}
+config.enable_scroll_bar = false
 
 config.colors = {
 	foreground = 'silver',
