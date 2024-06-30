@@ -10,7 +10,7 @@ if is_win then
 end
 
 config.initial_cols = 120
-config.initial_rows = 40
+config.initial_rows = 30
 
 config.window_decorations = 'INTEGRATED_BUTTONS | RESIZE'
 config.color_scheme = 'Batman'
