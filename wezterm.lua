@@ -33,6 +33,10 @@ config.font_size = 13.0
 
 config.keys = {
   { key = ':', mods = 'SHIFT|CTRL', action = wezterm.action.ShowTabNavigator },
+  { key = 'W', mods = 'SHIFT|CTRL', action = wezterm.action.CloseCurrentPane { confirm = true } },
+  { key = 'W', mods = 'SHIFT|CTRL|ALT', action = wezterm.action.CloseCurrentTab { confirm = true } },
+  { key = 'I', mods = 'SHIFT|CTRL', action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
+  { key = 'O', mods = 'SHIFT|CTRL', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
 }
 
 return config
