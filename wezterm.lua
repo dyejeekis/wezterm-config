@@ -31,4 +31,8 @@ config.colors = {
 -- config.font = wezterm.font 'Fira Code'
 config.font_size = 13.0
 
+config.keys = {
+  { key = ':', mods = 'SHIFT|CTRL', action = wezterm.action.ShowTabNavigator },
+}
+
 return config
