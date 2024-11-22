@@ -31,12 +31,34 @@ config.colors = {
 -- config.font = wezterm.font 'Fira Code'
 config.font_size = 13.0
 
+local act = wezterm.action
+
 config.keys = {
-  { key = ':', mods = 'SHIFT|CTRL', action = wezterm.action.ShowTabNavigator },
-  { key = 'W', mods = 'SHIFT|CTRL', action = wezterm.action.CloseCurrentPane { confirm = true } },
-  { key = 'W', mods = 'SHIFT|CTRL|ALT', action = wezterm.action.CloseCurrentTab { confirm = true } },
-  { key = 'I', mods = 'SHIFT|CTRL', action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
-  { key = 'O', mods = 'SHIFT|CTRL', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+	{ key = ':', mods = 'SHIFT|CTRL', action = act.ShowTabNavigator },
+	{ key = 'W', mods = 'SHIFT|CTRL', action = act.CloseCurrentPane { confirm = true } },
+	{ key = 'W', mods = 'SHIFT|CTRL|ALT', action = act.CloseCurrentTab { confirm = true } },
+	{ key = 'I', mods = 'SHIFT|CTRL', action = act.SplitVertical { domain = 'CurrentPaneDomain' } },
+	{ key = 'O', mods = 'SHIFT|CTRL', action = act.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+	{
+		key = 'H',
+		mods = 'CTRL|SHIFT',
+		action = act.ActivatePaneDirection 'Left',
+	  },
+	  {
+		key = 'L',
+		mods = 'CTRL|SHIFT',
+		action = act.ActivatePaneDirection 'Right',
+	  },
+	  {
+		key = 'K',
+		mods = 'CTRL|SHIFT',
+		action = act.ActivatePaneDirection 'Up',
+	  },
+	  {
+		key = 'J',
+		mods = 'CTRL|SHIFT',
+		action = act.ActivatePaneDirection 'Down',
+	  },
 }
 
 return config
