@@ -43,22 +43,27 @@ config.keys = {
 		key = 'H',
 		mods = 'CTRL|SHIFT',
 		action = act.ActivatePaneDirection 'Left',
-	  },
-	  {
+	},
+	{
 		key = 'L',
 		mods = 'CTRL|SHIFT',
 		action = act.ActivatePaneDirection 'Right',
-	  },
-	  {
+	},
+	{
 		key = 'K',
 		mods = 'CTRL|SHIFT',
 		action = act.ActivatePaneDirection 'Up',
-	  },
-	  {
+	},
+	{
 		key = 'J',
 		mods = 'CTRL|SHIFT',
 		action = act.ActivatePaneDirection 'Down',
-	  },
+	},
+	{
+		key = 'F',
+		mods = 'CTRL|SHIFT',
+		action = wezterm.action.Search({ CaseInSensitiveString = '' })
+	}
 }
 
 return config
