@@ -30,6 +30,8 @@ config.colors = {
 
 -- config.font = wezterm.font 'Fira Code'
 config.font_size = 13.0
+-- disable ligatures
+config.harfbuzz_features = { 'calt=0' }
 
 local act = wezterm.action
 
