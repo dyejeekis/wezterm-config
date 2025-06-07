@@ -28,7 +28,8 @@ config.colors = {
 	background = 'black',
 }
 
--- config.font = wezterm.font 'Fira Code'
+-- config.font = wezterm.font 'BlexMono Nerd Font Mono'
+config.font = wezterm.font 'JetBrainsMono NFM'
 config.font_size = 13.0
 -- disable ligatures
 config.harfbuzz_features = { 'calt=0' }
