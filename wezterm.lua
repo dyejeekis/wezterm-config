@@ -28,8 +28,13 @@ config.colors = {
 	background = 'black',
 }
 
+config.font = wezterm.font 'Consolas'
+-- config.font = wezterm.font '3270 Nerd Font Mono'
+-- config.font = wezterm.font 'FireCode Nerd Font Mono'
+-- config.font = wezterm.font 'CaskaydiaCove NFM'
+-- config.font = wezterm.font 'BigBlueTermPlus Nerd Font Mono'
 -- config.font = wezterm.font 'BlexMono Nerd Font Mono'
-config.font = wezterm.font 'JetBrainsMono NFM'
+-- config.font = wezterm.font 'JetBrainsMono NFM'
 config.font_size = 13.0
 -- disable ligatures
 config.harfbuzz_features = { 'calt=0' }
