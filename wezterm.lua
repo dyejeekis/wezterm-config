@@ -31,6 +31,7 @@ config.colors = {
 config.font = wezterm.font 'Consolas'
 -- config.font = wezterm.font '3270 Nerd Font Mono'
 -- config.font = wezterm.font 'FireCode Nerd Font Mono'
+-- config.font = wezterm.font 'IosevkaTerm NFM'
 -- config.font = wezterm.font 'CaskaydiaCove NFM'
 -- config.font = wezterm.font 'BigBlueTermPlus Nerd Font Mono'
 -- config.font = wezterm.font 'BlexMono Nerd Font Mono'
